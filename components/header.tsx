@@ -20,6 +20,7 @@ export function Header() {
     { label: t.nav.about, href: "#about" },
     { label: t.nav.technologies, href: "#technologies" },
     { label: t.nav.contact, href: "#contact" },
+    { label: t.nav.design, href: "#design" },
   ]
 
   return (
@@ -27,7 +28,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="#design" className="flex items-center gap-2">
             <Shield className="h-7 w-7 text-primary" strokeWidth={2.5} />
             <span className="text-lg font-bold tracking-tight text-foreground">
               Fortis<span className="text-primary">Teach</span>

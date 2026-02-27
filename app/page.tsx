@@ -9,6 +9,7 @@ import { TechnologiesSection } from "@/components/technologies-section"
 import { AboutSection } from "@/components/about-section"
 import { ContactSection } from "@/components/contact-section"
 import { SiteFooter } from "@/components/site-footer"
+import ProjectDesignProcess from "@/components/ui/ProjectDesignProcess"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <TechnologiesSection />
         <AboutSection />
         <ContactSection />
+        <ProjectDesignProcess />
       </main>
       <SiteFooter />
     </I18nProvider>

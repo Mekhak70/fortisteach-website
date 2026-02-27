@@ -7,6 +7,7 @@ export const translations = {
       about: "Մեր մասին",
       technologies: "Տեdelays",
       contact: "Կապ",
+      design: "Նախագծում"
     },
     hero: {
       title: "Պdelays IT & Smart Technology Lutions",
@@ -68,6 +69,7 @@ export const translations = {
       services: "Services",
       about: "About",
       technologies: "Technologies",
+      design: "design",      
       contact: "Contact",
     },
     hero: {
