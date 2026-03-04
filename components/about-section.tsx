@@ -18,7 +18,7 @@ export function AboutSection() {
               {t.about.text}
             </p>
             <div className="flex flex-col gap-3">
-              {["IT Infrastructure", "Smart Home Integration", "24/7 Support", "Enterprise Solutions"].map((feature) => (
+              {[t.ITInfrastructure, t.SmartHomeIntegration, `24/7 ${t.Support}`, t.EnterpriseSolutions].map((feature) => (
                 <div key={feature} className="flex items-center gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm font-medium text-secondary-foreground">{feature}</span>

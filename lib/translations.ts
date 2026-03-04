@@ -2,6 +2,10 @@ export type Locale = "hy" | "en" | "ru"
 
 export const translations = {
   hy: {
+    EnterpriseSolutions:'Կորպորատիվ լուծումներ',
+    Support:'Աջակցություն',
+    SmartHomeIntegration:'Խելացի տան ինտեգրում',
+    ITInfrastructure:'ՏՏ ենթակառուցվածք',
     EquipmentAndBrands:'Սարքավորումներ և Բրենդներ',
     VideoSurveillanceAndSmartSolutions:'Տեսահսկում և խելացի լուծումներ',
     CloudAndHybridSolutions:'Cloud և Հիբրիդ լուծումներ',
@@ -88,6 +92,10 @@ export const translations = {
   },
 
   en: {
+    EnterpriseSolutions:"Enterprise Solutions",
+    Support:'Support',
+    SmartHomeIntegration:'Smart Home Integration',
+    ITInfrastructure:'IT Infrastructure',
     EquipmentAndBrands:'Equipment and Brands',
     VideoSurveillanceAndSmartSolutions:'Video Surveillance and Smart Solutions',
     CloudAndHybridSolutions:'Cloud and Hybrid Solutions',
@@ -174,6 +182,10 @@ export const translations = {
   },
 
   ru: {
+    EnterpriseSolutions:'Корпоративные решения',
+    Support:'Поддержка',
+    SmartHomeIntegration:'Интеграция умного дома',
+    ITInfrastructure:'ИТ-инфраструктура',
     EquipmentAndBrands:'Оборудование и бренды',
     VideoSurveillanceAndSmartSolutions:'Видеонаблюдение и умные решения',
     CloudAndHybridSolutions:'Облачные и гибридные решения',
