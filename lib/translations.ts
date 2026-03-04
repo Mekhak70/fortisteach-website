@@ -2,6 +2,13 @@ export type Locale = "hy" | "en" | "ru"
 
 export const translations = {
   hy: {
+    EquipmentAndBrands:'Սարքավորումներ և Բրենդներ',
+    VideoSurveillanceAndSmartSolutions:'Տեսահսկում և խելացի լուծումներ',
+    CloudAndHybridSolutions:'Cloud և Հիբրիդ լուծումներ',
+    ManagementAndCorporateIT:'Կառավարում և Կորպորատիվ ՏՏ', 
+    SecurityAndProtection:'Անվտանգություն և Պաշտպանություն',
+    ServersAndVirtualization:'Սերվերներ և Վիրտուալիզացիա',
+    NetworksAndVPN:'Ցանցեր և VPN',
     orderAudit:'Պատվիրել աուդիտ',
     afterApproval:'Հաստատումից հետո իրականացվում են բոլոր աշխատանքները՝ համաձայնեցված տեխնիկական պահանջներով։',
     commercialProposalApproved:'Գնային առաջարկը հաստատելուց հետո իրականացվում են առաջարկում ներառված բոլոր աշխատանքները՝ համաձայնեցված ժամկետների և տեխնիկական պահանջների համապատասխան։ Անհրաժեշտության դեպքում ապահովվում է նաև հետագա տեխնիկական աջակցություն և սպասարկում։',
@@ -81,6 +88,13 @@ export const translations = {
   },
 
   en: {
+    EquipmentAndBrands:'Equipment and Brands',
+    VideoSurveillanceAndSmartSolutions:'Video Surveillance and Smart Solutions',
+    CloudAndHybridSolutions:'Cloud and Hybrid Solutions',
+    ManagementAndCorporateIT:'Management and Corporate IT',
+    SecurityAndProtection:"SecurityAndProtection",
+    ServersAndVirtualization:'Servers and Virtualization',
+    NetworksAndVPN:'Networks and VPN',
     orderAudit:'Order an Audit',
     afterApproval:'After approval, all tasks are carried out according to the agreed technical requirements.',
     commercialProposalApproved:'After the commercial proposal is approved, all tasks included in the proposal are carried out according to the agreed timelines and technical requirements. If necessary, ongoing technical support and maintenance are also provided.',
@@ -160,6 +174,13 @@ export const translations = {
   },
 
   ru: {
+    EquipmentAndBrands:'Оборудование и бренды',
+    VideoSurveillanceAndSmartSolutions:'Видеонаблюдение и умные решения',
+    CloudAndHybridSolutions:'Облачные и гибридные решения',
+    ManagementAndCorporateIT:'Управление и корпоративные ИТ',
+    SecurityAndProtection:"Безопасность и защита",
+    ServersAndVirtualization:'Серверы и Виртуализация',
+    NetworksAndVPN:'Сети и VPN',
     orderAudit:'Заказать аудит',
     afterApproval:'После утверждения выполняются все работы в соответствии с согласованными техническими требованиями.',
     commercialProposalApproved:'После утверждения коммерческого предложения выполняются все работы, включенные в предложение, в соответствии с согласованными сроками и техническими требованиями. При необходимости обеспечивается дальнейшая техническая поддержка и обслуживание.',

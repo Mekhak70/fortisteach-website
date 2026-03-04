@@ -1,8 +1,8 @@
 import { useI18n } from "@/lib/i18n-context";
 import Link from "next/link";
 export default function ProjectDesignProcess() {
-    const { t, locale, setLocale } = useI18n()
-  
+  const { t, locale, setLocale } = useI18n()
+
   return (
     <section id="design" className="relative py-24 px-6 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -13,7 +13,7 @@ export default function ProjectDesignProcess() {
             {t.designStages}
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-          {t.OurDesignProcess}
+            {t.OurDesignProcess}
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function ProjectDesignProcess() {
                 🔎 {t.Audit}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-              {t.processAudit}
+                {t.processAudit}
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function ProjectDesignProcess() {
                 💼 {t.CommercialProposal}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-              {t.auditResults}
+                {t.auditResults}
                 <br /><br />
                 {t.commercialProposalMayInclude}
               </p>
@@ -73,7 +73,7 @@ export default function ProjectDesignProcess() {
                 ⚙️ {t.Implementation}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-              {t.commercialProposalApproved}
+                {t.commercialProposalApproved}
               </p>
             </div>
 
@@ -84,7 +84,7 @@ export default function ProjectDesignProcess() {
             <div className="md:w-1/2 md:pl-16 md:hidden mt-10 text-center">
               <h2 className="text-2xl font-semibold mb-4">⚙️ {t.Implementation}</h2>
               <p className="text-gray-600">
-            {t.afterApproval}
+                {t.afterApproval}
               </p>
             </div>
           </div>
@@ -93,16 +93,13 @@ export default function ProjectDesignProcess() {
 
         {/* CTA */}
         <div className="text-center mt-24">
-
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg transition" style={{ cursor: 'pointer' }}
-          >
-             <a
-                href={'#contact'}
-                className="text-sm font-medium"
-              >
-{t.orderAudit}
-</a>
-          </button>
+          <a
+            className="text-sm font-medium"
+            href={'#contact'} >
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg transition" style={{ cursor: 'pointer' }}
+            >
+              {t.orderAudit}
+            </button></a>
         </div>
 
       </div>

@@ -75,7 +75,7 @@ export function TechnologiesSection() {
           {t.technologies.title}
         </h2>
         <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8 text-balance">
-          🌐 Ցանցեր և VPN
+          🌐 {t.NetworksAndVPN}
         </h3>
         <div className="flex flex-wrap justify-center gap-3">
           {technologiesGroupOne.map((tech) => (
@@ -90,7 +90,7 @@ export function TechnologiesSection() {
           <div style={{paddingTop:'30px'}}>
 
           <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8 text-balance">
-            🖥 Սերվերներ և Վիրտուալիզացիա
+            🖥 {t.ServersAndVirtualization}
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {technologiesGroupTwo.map((tech) => (
@@ -106,7 +106,7 @@ export function TechnologiesSection() {
           <div style={{paddingTop:'30px'}}>
 
           <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8 text-balance">
-            🔐 Անվտանգություն և Պաշտպանություն
+            🔐 {t.SecurityAndProtection}
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {technologiesGroupThree.map((tech) => (
@@ -121,7 +121,7 @@ export function TechnologiesSection() {
           </div>
           <div style={{paddingTop:'30px'}}>
           <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8 text-balance">
-            🧠 Կառավարում և Կորպորատիվ ՏՏ
+            🧠 {t.ManagementAndCorporateIT}
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {technologiesGroupSeven.map((tech) => (
@@ -136,7 +136,7 @@ export function TechnologiesSection() {
           </div>
           <div style={{paddingTop:'30px'}}>
           <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8 text-balance">
-            ☁️ Cloud & Հիբրիդ լուծումներ
+            ☁️ {t.CloudAndHybridSolutions}
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {technologiesGroupFour.map((tech) => (
@@ -151,7 +151,7 @@ export function TechnologiesSection() {
           </div>
           <div style={{paddingTop:'30px'}}>
           <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8 text-balance">
-            📹 Տեսահսկում և Smart լուծումներ
+            📹 {t.VideoSurveillanceAndSmartSolutions}
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {technologiesGroupFive.map((tech) => (
@@ -166,7 +166,7 @@ export function TechnologiesSection() {
           </div>
           <div style={{paddingTop:'30px'}}>
           <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground mb-8 text-balance">
-            🧰 Սարքավորումներ և Բրենդներ
+            🧰 {t.EquipmentAndBrands}
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {technologiesGroupSix.map((tech) => (
