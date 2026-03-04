@@ -2,79 +2,109 @@ export type Locale = "hy" | "en" | "ru"
 
 export const translations = {
   hy: {
+    orderAudit:'Պատվիրել աուդիտ',
+    afterApproval:'Հաստատումից հետո իրականացվում են բոլոր աշխատանքները՝ համաձայնեցված տեխնիկական պահանջներով։',
+    commercialProposalApproved:'Գնային առաջարկը հաստատելուց հետո իրականացվում են առաջարկում ներառված բոլոր աշխատանքները՝ համաձայնեցված ժամկետների և տեխնիկական պահանջների համապատասխան։ Անհրաժեշտության դեպքում ապահովվում է նաև հետագա տեխնիկական աջակցություն և սպասարկում։',
+    Implementation:'Իրականացում',
+    commercialProposalMayInclude:'Գնային առաջարկը կարող է ներառել ինչպես միանվագ աշխատանքներ, այնպես էլ ամսական սպասարկման ծառայություն։ Պատրաստ լինելուց հետո այն ուղարկվում է հաճախորդին հաստատման համար։',
+    auditResults:'Աուդիտի արդյունքների հիման վրա ձևավորվում է անհատական գնային առաջարկ։ Այն կախված է խնդիրների ծավալից, օգտագործվող տեխնիկայի և սերվերների քանակից, ինչպես նաև սպասարկման անհրաժեշտությունից։',
+    CommercialProposal:'Գնային առաջարկ',
+    firststagedesignprocess:'Նախագծման առաջին փուլը աուդիտի իրականացումն է։ Ուսումնասիրվում է ՏՏ ենթակառուցվածքը և առաջարկվում են լուծումներ։',
+    designStages :'Նախագծման փուլերը',
+    MessagesSent: "Հաղորդագրությունը ուղարկված է ✅",
+    OurDesignProcess:'Մեր նախագծման գործընթացը կառուցված է հստակ և համակարգված փուլերով՝ ապահովելու բարձր որակ, վերահսկելիություն և կանխատեսելի արդյունք յուրաքանչյուր հաճախորդի համար։',
+    Audit:'Աուդիտ',
+    processAudit:'Նախագծման առաջին փուլը աուդիտի իրականացումն է։ Ուսումնասիրվում է կազմակերպության ՏՏ ենթակառուցվածքը, բացահայտվում են առկա խնդիրներն ու հնարավոր ռիսկերը, որից հետո առաջարկվում են համապատասխան լուծումների տարբերակներ։',
     nav: {
       services: "Ծառայություններ",
       about: "Մեր մասին",
-      technologies: "Տեdelays",
+      technologies: "Տեխնոլոգիաներ",
+      design: "Նախագծում",
       contact: "Կապ",
-      design: "Նախագծում"
     },
     hero: {
-      title: "Պdelays IT & Smart Technology Lutions",
-      subtitle: "Hmbar texnologic, cancy, server ev smart home delaysincer Yerevanum ev marzernm",
-      cta1: "Ստdelays Orsults",
-      cta2: "Կdelaysse",
+      title: "Պրոֆեսիոնալ IT և Smart Տեխնոլոգիական Լուծումներ",
+      subtitle:
+        "Հուսալի տեխնիկական, ցանցային, սերվերային և խելացի տան ծառայություններ Երևանում և մարզերում",
+      cta1: "Ստանալ խորհրդատվություն",
+      cta2: "Կապվել մեզ հետ",
     },
     services: {
-      title: "Մdelay Cion",
-      subtitle: "Amsalsdelaysdelays delaysdelaysion",
+      title: "Մեր ծառայությունները",
+      subtitle: "Կոմպլեքս IT լուծումներ բիզնեսի և տան համար",
       items: [
-        { title: "Tdelaysdelaysdelays delays delays", desc: "Evadrakan delays rmadon delaysdelaysdelays" },
-        { title: "Candsdelaysdelays", desc: "LAN, VAN, VPN, L2TP, OpenVPN, WireGuard delays" },
-        { title: "Sdelaysdelaysdelays", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
-        { title: "Grdelaysdelaysdelays delays", desc: "Grdelaysdelaysdelays delays candsdelays delays delays" },
-        { title: "Tdelaysdelaysdelays delays", desc: "Tdelaysdelaysdelays delays delays delays" },
-        { title: "Mdelaysdelaysdelays delays", desc: "Intdelays delays delaysdelays delays" },
-        { title: "Sdelaysdelaysdelays delays", desc: "Alexa, Siri, lavlays, delaysdelays delays" },
-        { title: "Jdelaysdelaysdelays delays", desc: "Jdelays delays delays delaysdelays Smart Home delays" },
+        { title: "Տեխնիկական սպասարկում", desc: "Էլեկտրական և համակարգչային սպասարկում" },
+        { title: "Ցանցային ծառայություններ", desc: "LAN, WAN, VPN, L2TP, OpenVPN, WireGuard կարգավորում" },
+        { title: "Սերվերների կառավարում", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
+        { title: "Գրասենյակային ցանցերի նախագծում", desc: "Գրասենյակային ցանցերի նախագծում և սպասարկում" },
+        { title: "Տեսահսկում", desc: "Պրոֆեսիոնալ տեսահսկման համակարգեր" },
+        { title: "Մուտքի վերահսկում", desc: "Դոմոֆոն և մուտքի վերահսկման համակարգեր" },
+        { title: "Խելացի տուն", desc: "Alexa, Siri ինտեգրում, լուսավորություն, անվտանգության համակարգեր" },
+        { title: "Ջրի և էլեկտրաէներգիայի սենսորներ", desc: "Սենսորներ Smart Home համակարգում ինտեգրմամբ" },
       ],
     },
     whyUs: {
-      title: "Idelays delays delays delays",
+      title: "Ինչու ընտրել մեզ",
       items: [
-        { title: "Mdelaysdelays delays", desc: "Sdelaysdelaysdelays delays delays delays" },
-        { title: "Idelaysdelays delays", desc: "Ydelaysdelaysdelays delays delays delays" },
-        { title: "Ardelaysdelays delays", desc: "Adelaysdelaysdelays delays delaysdelays delays" },
-        { title: "Fdelaysdelays delays", desc: "Bdelaysdelaysdelays delays delays delays" },
-        { title: "Idelaysdelays delays", desc: "Ydelaysdelaysdelays delays delays delays delays delays" },
+        { title: "Ժամանակակից տեխնոլոգիաներ", desc: "Օգտագործում ենք առաջատար գործիքներ և լուծումներ" },
+        { title: "Անհատական մոտեցում", desc: "Յուրաքանչյուր հաճախորդի համար հարմարեցված լուծումներ" },
+        { title: "Արագ և երաշխավորված", desc: "Օպերատիվ աշխատանք և երաշխավորված արդյունք" },
+        { title: "Փորձառու թիմ", desc: "Բարձրակարգ IT մասնագետներ" },
+        { title: "Լայն ծածկույթ", desc: "Աշխատում ենք Երևանում և Հայաստանի բոլոր մարզերում" },
       ],
     },
     technologies: {
-      title: "Tdelaysdelaysdelays",
+      title: "Տեխնոլոգիաներ, որոնց հետ աշխատում ենք",
     },
     about: {
-      title: "Mdelays delays delays",
-      text: "FortisTeach-delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays delays.",
+      title: "FortisTeach-ի մասին",
+      text:
+        "FortisTeach-ը պրոֆեսիոնալ IT ենթակառուցվածքային և խելացի լուծումների մատակարար է Երևանում։ Մենք տրամադրում ենք կորպորատիվ մակարդակի ծառայություններ՝ ներառյալ ցանցերի նախագծում, սերվերների կառավարում, խելացի տան ինտեգրում և ամբողջական IT աջակցություն Հայաստանում։",
     },
     contact: {
-      title: "Kdelays delays",
-      phone: "Hdelays",
-      email: "Edelays delays",
-      area: "Sdelays delays",
-      areaValue: "Yerevdelays delays delays delays delays delays delays",
+      title: "Կապ մեզ հետ",
+      phone: "Հեռախոս",
+      email: "Էլ. փոստ",
+      area: "Սպասարկման տարածք",
+      areaValue: "Երևան և Հայաստանի բոլոր մարզեր",
       form: {
-        name: "Adelays",
-        email: "Edelays delays",
-        message: "Hdelays delays",
-        send: "Udelays delays",
+        name: "Անուն",
+        email: "Էլ. հասցե",
+        message: "Հաղորդագրություն",
+        send: "Ուղարկել",
       },
     },
     footer: {
-      rights: "Bdelays delays delays delays delays delays.",
-      address: "Yerevdelays, Hdelays",
+      rights: "Բոլոր իրավունքները պաշտպանված են։",
+      address: "Երևան, Հայաստան",
     },
   },
+
   en: {
+    orderAudit:'Order an Audit',
+    afterApproval:'After approval, all tasks are carried out according to the agreed technical requirements.',
+    commercialProposalApproved:'After the commercial proposal is approved, all tasks included in the proposal are carried out according to the agreed timelines and technical requirements. If necessary, ongoing technical support and maintenance are also provided.',
+    Implementation:'Implementation',
+    commercialProposalMayInclude:'The commercial proposal may include both one-time tasks and monthly maintenance services. Once prepared, it is sent to the client for approval.',
+    auditResults:'Based on the audit results, a personalized commercial proposal is created. It depends on the scope of the issues, the equipment and servers used, as well as the need for maintenance.',
+    CommercialProposal:'Commercial Proposal',
+    firststagedesignprocess:'The first stage of the design process is conducting an audit. The IT infrastructure is analyzed and solutions are proposed.',
+    processAudit:"The first stage of the design process is conducting an audit. The organization's IT infrastructure is analyzed, existing issues and potential risks are identified, after which appropriate solution options are proposed.",
+    Audit:'Audit',
+    OurDesignProcess:'Our design process is built on clear and structured stages to ensure high quality, control, and predictable results for every client.',
+    designStages :'Project Design Stages',
+    MessagesSent: "Message sent successfully ✅",
     nav: {
       services: "Services",
       about: "About",
       technologies: "Technologies",
-      design: "design",      
+      design: "Design",
       contact: "Contact",
     },
     hero: {
       title: "Professional IT & Smart Technology Solutions",
-      subtitle: "Reliable technical, network, server and smart home services in Yerevan and regions",
+      subtitle:
+        "Reliable technical, network, server and smart home services in Yerevan and across Armenia",
       cta1: "Get Consultation",
       cta2: "Contact Us",
     },
@@ -83,13 +113,13 @@ export const translations = {
       subtitle: "Comprehensive IT solutions for businesses and homes",
       items: [
         { title: "Technical Maintenance", desc: "Electrical and computer support services" },
-        { title: "Network Services", desc: "LAN, VAN, VPN, L2TP, OpenVPN, WireGuard setup" },
+        { title: "Network Services", desc: "LAN, WAN, VPN, L2TP, OpenVPN, WireGuard setup" },
         { title: "Server Administration", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
         { title: "Office Network Design", desc: "Office network design and maintenance solutions" },
         { title: "Video Surveillance", desc: "Professional video surveillance systems" },
         { title: "Access Control Systems", desc: "Intercom and access control solutions" },
-        { title: "Smart Home Solutions", desc: "Alexa, Siri integration, lighting, security systems" },
-        { title: "Water & Electric Sensors", desc: "Water and electricity sensors integrated with Smart Home" },
+        { title: "Smart Home Solutions", desc: "Alexa, Siri integration, lighting and security systems" },
+        { title: "Water & Electricity Sensors", desc: "Sensors integrated with Smart Home systems" },
       ],
     },
     whyUs: {
@@ -97,9 +127,9 @@ export const translations = {
       items: [
         { title: "Modern Technologies", desc: "We use cutting-edge tools and solutions" },
         { title: "Individual Approach", desc: "Tailored solutions for every client" },
-        { title: "Fast & Guaranteed", desc: "Quick response with guaranteed results" },
+        { title: "Fast & Reliable", desc: "Quick response with guaranteed results" },
         { title: "Experienced Team", desc: "Highly qualified IT specialists" },
-        { title: "Wide Coverage", desc: "Working in Yerevan and all regions of Armenia" },
+        { title: "Wide Coverage", desc: "Operating in Yerevan and all regions of Armenia" },
       ],
     },
     technologies: {
@@ -107,7 +137,8 @@ export const translations = {
     },
     about: {
       title: "About FortisTeach",
-      text: "FortisTeach is a professional IT infrastructure and smart solutions provider based in Yerevan, Armenia. We deliver enterprise-level technical services including network design, server administration, smart home integration, and comprehensive IT support for businesses and individuals across Armenia.",
+      text:
+        "FortisTeach is a professional IT infrastructure and smart solutions provider based in Yerevan, Armenia. We deliver enterprise-level technical services including network design, server administration, smart home integration, and comprehensive IT support across Armenia.",
     },
     contact: {
       title: "Contact Us",
@@ -127,112 +158,86 @@ export const translations = {
       address: "Yerevan, Armenia",
     },
   },
+
   ru: {
+    orderAudit:'Заказать аудит',
+    afterApproval:'После утверждения выполняются все работы в соответствии с согласованными техническими требованиями.',
+    commercialProposalApproved:'После утверждения коммерческого предложения выполняются все работы, включенные в предложение, в соответствии с согласованными сроками и техническими требованиями. При необходимости обеспечивается дальнейшая техническая поддержка и обслуживание.',
+    Implementation:'Реализация',
+    commercialProposalMayInclude:'Коммерческое предложение может включать как разовые работы, так и ежемесячное обслуживание. После подготовки оно отправляется клиенту для подтверждения.',
+    auditResults:'На основе результатов аудита формируется индивидуальное коммерческое предложение. Оно зависит от объема проблем, используемого оборудования и количества серверов, а также от необходимости обслуживания.',
+    CommercialProposal:"Коммерческое предложение",
+    firststagedesignprocess:'Первым этапом проектирования является проведение аудита. Изучается ИТ-инфраструктура и предлагаются решения.',
+    processAudit:'Первым этапом проектирования является проведение аудита. Изучается ИТ-инфраструктура организации, выявляются существующие проблемы и возможные риски, после чего предлагаются соответствующие варианты решений.',
+    Audit:'Аудит',
+    designStages :'Этапы проектирования',
+    OurDesignProcess:'Наш процесс проектирования построен на четких и системных этапах, чтобы обеспечить высокое качество, контроль и предсказуемый результат для каждого клиента.',
+    MessagesSent: "Сообщение успешно отправлено ✅",
+
     nav: {
-      services: "\u0423\u0441\u043B\u0443\u0433\u0438",
-      about: "\u041E \u043D\u0430\u0441",
-      technologies: "\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438",
-      contact: "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B",
+      services: "Услуги",
+      about: "О нас",
+      technologies: "Технологии",
+      design: "Проектирование",
+      contact: "Контакты",
     },
     hero: {
-      title: "\u041F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0435 IT \u0438 Smart \u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0420\u0435\u0448\u0435\u043D\u0438\u044F",
-      subtitle: "\u041D\u0430\u0434\u0435\u0436\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435, \u0441\u0435\u0442\u0435\u0432\u044B\u0435, \u0441\u0435\u0440\u0432\u0435\u0440\u043D\u044B\u0435 \u0438 \u0443\u043C\u043D\u044B\u0435 \u0434\u043E\u043C\u0430\u0448\u043D\u0438\u0435 \u0443\u0441\u043B\u0443\u0433\u0438 \u0432 \u0415\u0440\u0435\u0432\u0430\u043D\u0435 \u0438 \u0440\u0435\u0433\u0438\u043E\u043D\u0430\u0445",
-      cta1: "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u041A\u043E\u043D\u0441\u0443\u043B\u044C\u0442\u0430\u0446\u0438\u044E",
-      cta2: "\u0421\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F",
+      title: "Профессиональные IT и Smart Технологические Решения",
+      subtitle:
+        "Надёжные технические, сетевые, серверные и услуги умного дома в Ереване и по всей Армении",
+      cta1: "Получить консультацию",
+      cta2: "Связаться с нами",
     },
     services: {
-      title: "\u041D\u0430\u0448\u0438 \u0423\u0441\u043B\u0443\u0433\u0438",
-      subtitle: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u044B\u0435 IT-\u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0434\u043B\u044F \u0431\u0438\u0437\u043D\u0435\u0441\u0430 \u0438 \u0434\u043E\u043C\u0430",
+      title: "Наши услуги",
+      subtitle: "Комплексные IT-решения для бизнеса и дома",
       items: [
-        { title: "\u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u043E\u0435 \u041E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u0435", desc: "\u042D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0438 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043D\u0430\u044F \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430" },
-        { title: "\u0421\u0435\u0442\u0435\u0432\u044B\u0435 \u0423\u0441\u043B\u0443\u0433\u0438", desc: "LAN, VAN, VPN, L2TP, OpenVPN, WireGuard \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430" },
-        { title: "\u0410\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0421\u0435\u0440\u0432\u0435\u0440\u043E\u0432", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
-        { title: "\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0421\u0435\u0442\u0435\u0439", desc: "\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u0435 \u043E\u0444\u0438\u0441\u043D\u044B\u0445 \u0441\u0435\u0442\u0435\u0439" },
-        { title: "\u0412\u0438\u0434\u0435\u043E\u043D\u0430\u0431\u043B\u044E\u0434\u0435\u043D\u0438\u0435", desc: "\u041F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0432\u0438\u0434\u0435\u043E\u043D\u0430\u0431\u043B\u044E\u0434\u0435\u043D\u0438\u044F" },
-        { title: "\u0421\u0438\u0441\u0442\u0435\u043C\u044B \u041A\u043E\u043D\u0442\u0440\u043E\u043B\u044F \u0414\u043E\u0441\u0442\u0443\u043F\u0430", desc: "\u0414\u043E\u043C\u043E\u0444\u043E\u043D\u044B \u0438 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044F \u0434\u043E\u0441\u0442\u0443\u043F\u0430" },
-        { title: "\u0423\u043C\u043D\u044B\u0439 \u0414\u043E\u043C", desc: "Alexa, Siri \u0438\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044F, \u043E\u0441\u0432\u0435\u0449\u0435\u043D\u0438\u0435, \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u044C" },
-        { title: "\u0414\u0430\u0442\u0447\u0438\u043A\u0438 \u0412\u043E\u0434\u044B \u0438 \u042D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u0430", desc: "\u0414\u0430\u0442\u0447\u0438\u043A\u0438 \u0432\u043E\u0434\u044B \u0438 \u044D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u0430, \u0438\u043D\u0442\u0435\u0433\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u0441 \u0423\u043C\u043D\u044B\u043C \u0414\u043E\u043C\u043E\u043C" },
+        { title: "Техническое обслуживание", desc: "Электротехническая и компьютерная поддержка" },
+        { title: "Сетевые услуги", desc: "Настройка LAN, WAN, VPN, L2TP, OpenVPN, WireGuard" },
+        { title: "Администрирование серверов", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
+        { title: "Проектирование сетей", desc: "Проектирование и обслуживание офисных сетей" },
+        { title: "Видеонаблюдение", desc: "Профессиональные системы видеонаблюдения" },
+        { title: "Контроль доступа", desc: "Домофоны и системы контроля доступа" },
+        { title: "Умный дом", desc: "Интеграция Alexa, Siri, освещение и безопасность" },
+        { title: "Датчики воды и электричества", desc: "Интеграция с системой Умный Дом" },
       ],
     },
     whyUs: {
-      title: "\u041F\u043E\u0447\u0435\u043C\u0443 \u041C\u044B",
+      title: "Почему выбирают нас",
       items: [
-        { title: "\u0421\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0435 \u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438", desc: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C \u043F\u0435\u0440\u0435\u0434\u043E\u0432\u044B\u0435 \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u044B \u0438 \u0440\u0435\u0448\u0435\u043D\u0438\u044F" },
-        { title: "\u0418\u043D\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043B\u044C\u043D\u044B\u0439 \u041F\u043E\u0434\u0445\u043E\u0434", desc: "\u041F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0434\u043B\u044F \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u043A\u043B\u0438\u0435\u043D\u0442\u0430" },
-        { title: "\u0411\u044B\u0441\u0442\u0440\u043E \u0438 \u041D\u0430\u0434\u0435\u0436\u043D\u043E", desc: "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u0440\u0435\u0430\u043A\u0446\u0438\u044F \u0441 \u0433\u0430\u0440\u0430\u043D\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u043E\u043C" },
-        { title: "\u041E\u043F\u044B\u0442\u043D\u0430\u044F \u041A\u043E\u043C\u0430\u043D\u0434\u0430", desc: "\u0412\u044B\u0441\u043E\u043A\u043E\u043A\u0432\u0430\u043B\u0438\u0444\u0438\u0446\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435 IT-\u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442\u044B" },
-        { title: "\u0428\u0438\u0440\u043E\u043A\u0438\u0439 \u041E\u0445\u0432\u0430\u0442", desc: "\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u0432 \u0415\u0440\u0435\u0432\u0430\u043D\u0435 \u0438 \u0432\u043E \u0432\u0441\u0435\u0445 \u0440\u0435\u0433\u0438\u043E\u043D\u0430\u0445 \u0410\u0440\u043C\u0435\u043D\u0438\u0438" },
+        { title: "Современные технологии", desc: "Используем передовые инструменты и решения" },
+        { title: "Индивидуальный подход", desc: "Решения под каждого клиента" },
+        { title: "Быстро и надёжно", desc: "Оперативная работа с гарантированным результатом" },
+        { title: "Опытная команда", desc: "Квалифицированные IT-специалисты" },
+        { title: "Широкий охват", desc: "Работаем в Ереване и по всей Армении" },
       ],
     },
     technologies: {
-      title: "\u0422\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438, \u0441 \u041A\u043E\u0442\u043E\u0440\u044B\u043C\u0438 \u041C\u044B \u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C",
+      title: "Технологии, с которыми мы работаем",
     },
     about: {
-      title: "\u041E \u041A\u043E\u043C\u043F\u0430\u043D\u0438\u0438 FortisTeach",
-      text: "FortisTeach \u2014 \u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A IT-\u0438\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0438 \u0443\u043C\u043D\u044B\u0445 \u0440\u0435\u0448\u0435\u043D\u0438\u0439 \u0432 \u0415\u0440\u0435\u0432\u0430\u043D\u0435, \u0410\u0440\u043C\u0435\u043D\u0438\u044F. \u041C\u044B \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u043C \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0443\u0441\u043B\u0443\u0433\u0438 \u043A\u043E\u0440\u043F\u043E\u0440\u0430\u0442\u0438\u0432\u043D\u043E\u0433\u043E \u0443\u0440\u043E\u0432\u043D\u044F, \u0432\u043A\u043B\u044E\u0447\u0430\u044F \u043F\u0440\u043E\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0441\u0435\u0442\u0435\u0439, \u0430\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0441\u0435\u0440\u0432\u0435\u0440\u043E\u0432, \u0438\u043D\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044E \u0443\u043C\u043D\u043E\u0433\u043E \u0434\u043E\u043C\u0430 \u0438 \u043A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0443\u044E IT-\u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443 \u043F\u043E \u0432\u0441\u0435\u0439 \u0410\u0440\u043C\u0435\u043D\u0438\u0438.",
+      title: "О компании FortisTeach",
+      text:
+        "FortisTeach — профессиональный поставщик IT-инфраструктурных и smart-решений в Ереване. Мы предоставляем услуги корпоративного уровня: проектирование сетей, администрирование серверов, интеграцию умного дома и комплексную IT-поддержку по всей Армении.",
     },
     contact: {
-      title: "\u0421\u0432\u044F\u0436\u0438\u0442\u0435\u0441\u044C \u0441 \u041D\u0430\u043C\u0438",
-      phone: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D",
-      email: "\u042D\u043B. \u043F\u043E\u0447\u0442\u0430",
-      area: "\u0417\u043E\u043D\u0430 \u041E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F",
-      areaValue: "\u0415\u0440\u0435\u0432\u0430\u043D \u0438 \u0432\u0441\u0435 \u0440\u0435\u0433\u0438\u043E\u043D\u044B \u0410\u0440\u043C\u0435\u043D\u0438\u0438",
+      title: "Свяжитесь с нами",
+      phone: "Телефон",
+      email: "Эл. почта",
+      area: "Зона обслуживания",
+      areaValue: "Ереван и все регионы Армении",
       form: {
-        name: "\u0412\u0430\u0448\u0435 \u0418\u043C\u044F",
-        email: "\u0412\u0430\u0448 Email",
-        message: "\u0412\u0430\u0448\u0435 \u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-        send: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C",
+        name: "Ваше имя",
+        email: "Ваш Email",
+        message: "Ваше сообщение",
+        send: "Отправить",
       },
     },
     footer: {
-      rights: "\u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B.",
-      address: "\u0415\u0440\u0435\u0432\u0430\u043D, \u0410\u0440\u043C\u0435\u043D\u0438\u044F",
+      rights: "Все права защищены.",
+      address: "Ереван, Армения",
     },
   },
 } as const
-
-// Fix Armenian translations with proper text
-translations.hy.nav.services = "\u053E\u0561\u057C\u0561\u0575\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580"
-translations.hy.nav.about = "\u0544\u0565\u0580 \u0574\u0561\u057D\u056B\u0576"
-translations.hy.nav.technologies = "\u054F\u0565\u056D\u0576\u0578\u056C\u0578\u0563\u056B\u0561\u0576\u0565\u0580"
-translations.hy.nav.contact = "\u053F\u0561\u057A"
-translations.hy.hero.title = "\u054A\u0580\u0578\u0586\u0565\u057D\u056B\u0578\u0576\u0561\u056C IT \u0587 Smart \u054F\u0565\u056D\u0576\u0578\u056C\u0578\u0563\u056B\u0561\u056F\u0561\u0576 \u053C\u0578\u0582\u056E\u0578\u0582\u0574\u0576\u0565\u0580"
-translations.hy.hero.subtitle = "\u0540\u0578\u0582\u057D\u0561\u056C\u056B \u057F\u0565\u056D\u0576\u056B\u056F\u0561\u056F\u0561\u0576, \u0581\u0561\u0576\u0581\u0561\u0575\u056B\u0576, \u057D\u0565\u0580\u057E\u0565\u0580\u0561\u0575\u056B\u0576 \u0587 \u056D\u0565\u056C\u0561\u0581\u056B \u057F\u0561\u0576 \u056E\u0561\u057C\u0561\u0575\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580 \u0535\u0580\u0587\u0561\u0576\u0578\u0582\u0574 \u0587 \u0574\u0561\u0580\u0566\u0565\u0580\u0578\u0582\u0574"
-translations.hy.hero.cta1 = "\u054D\u057F\u0561\u0576\u0561\u056C \u053D\u0578\u0580\u0570\u0580\u0564\u0561\u057F\u057E\u0578\u0582\u0569\u0575\u0578\u0582\u0576"
-translations.hy.hero.cta2 = "\u053F\u0561\u057A\u0576\u057E\u0565\u056C"
-translations.hy.services.title = "\u0544\u0565\u0580 \u053E\u0561\u057C\u0561\u0575\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580\u0568"
-translations.hy.services.subtitle = "\u053F\u0578\u0574\u057A\u056C\u0565\u0584\u057D IT \u056C\u0578\u0582\u056E\u0578\u0582\u0574\u0576\u0565\u0580 \u0562\u056B\u0566\u0576\u0565\u057D\u056B \u0587 \u057F\u0561\u0576 \u0570\u0561\u0574\u0561\u0580"
-;(translations.hy.services.items as any) = [
-  { title: "\u054F\u0565\u056D\u0576\u056B\u056F\u0561\u056F\u0561\u0576 \u054D\u057A\u0561\u057D\u0561\u0580\u056F\u0578\u0582\u0574", desc: "\u0537\u056C\u0565\u056F\u057F\u0580\u0561\u056F\u0561\u0576 \u0587 \u0570\u0561\u0574\u0561\u056F\u0561\u0580\u0563\u0579\u0561\u0575\u056B\u0576 \u057D\u057A\u0561\u057D\u0561\u0580\u056F\u0578\u0582\u0574" },
-  { title: "\u0551\u0561\u0576\u0581\u0561\u0575\u056B\u0576 \u053E\u0561\u057C\u0561\u0575\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580", desc: "LAN, VAN, VPN, L2TP, OpenVPN, WireGuard \u056F\u0561\u0580\u0563\u0561\u057E\u0578\u0580\u0578\u0582\u0574" },
-  { title: "\u054D\u0565\u0580\u057E\u0565\u0580\u0576\u0565\u0580\u056B \u053F\u0561\u057C\u0561\u057E\u0561\u0580\u0578\u0582\u0574", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
-  { title: "\u0533\u0580\u0561\u057D\u0565\u0576\u0575\u0561\u056F\u0561\u0575\u056B\u0576 \u0551\u0561\u0576\u0581\u0565\u0580\u056B \u0546\u0561\u056D\u0561\u0563\u056E\u0578\u0582\u0574", desc: "\u0533\u0580\u0561\u057D\u0565\u0576\u0575\u0561\u056F\u0561\u0575\u056B\u0576 \u0581\u0561\u0576\u0581\u0565\u0580\u056B \u0576\u0561\u056D\u0561\u0563\u056E\u0578\u0582\u0574 \u0587 \u057D\u057A\u0561\u057D\u0561\u0580\u056F\u0578\u0582\u0574" },
-  { title: "\u054F\u0565\u057D\u0561\u0570\u057D\u056F\u0578\u0582\u0574", desc: "\u054A\u0580\u0578\u0586\u0565\u057D\u056B\u0578\u0576\u0561\u056C \u057F\u0565\u057D\u0561\u0570\u057D\u056F\u0574\u0561\u0576 \u0570\u0561\u0574\u0561\u056F\u0561\u0580\u0563\u0565\u0580" },
-  { title: "\u0544\u0578\u0582\u057F\u0584\u056B \u054E\u0565\u0580\u0561\u0570\u057D\u056F\u0578\u0582\u0574", desc: "\u0534\u0578\u0574\u0578\u0586\u0578\u0576 \u0587 \u0574\u0578\u0582\u057F\u0584\u056B \u057E\u0565\u0580\u0561\u0570\u057D\u056F\u0574\u0561\u0576 \u0570\u0561\u0574\u0561\u056F\u0561\u0580\u0563\u0565\u0580" },
-  { title: "\u053D\u0565\u056C\u0561\u0581\u056B \u054F\u0578\u0582\u0576", desc: "Alexa, Siri \u056B\u0576\u057F\u0565\u0563\u0580\u0561\u0581\u056B\u0561, \u056C\u0578\u0582\u057D\u0561\u057E\u0578\u0580\u0578\u0582\u0574, \u0561\u0576\u057E\u057F\u0561\u0576\u0563\u0578\u0582\u0569\u0575\u0578\u0582\u0576" },
-  { title: "\u054B\u0580\u056B \u0587 \u0537\u056C\u0565\u056F\u057F\u0580\u0561\u056F\u0561\u0576\u0578\u0582\u0569\u0575\u0561\u0576 \u054D\u0565\u0576\u057D\u0578\u0580\u0576\u0565\u0580", desc: "\u054B\u0580\u056B \u0587 \u0567\u056C\u0565\u056F\u057F\u0580\u0561\u056F\u0561\u0576\u0578\u0582\u0569\u0575\u0561\u0576 \u057D\u0565\u0576\u057D\u0578\u0580\u0576\u0565\u0580\u055D \u056B\u0576\u057F\u0565\u0563\u0580\u057E\u0561\u056E Smart Home-\u056B\u0576" },
-]
-translations.hy.whyUs.title = "\u053B\u0576\u0579\u0578\u0582 \u0538\u0576\u057F\u0580\u0565\u056C \u0544\u0565\u0566"
-;(translations.hy.whyUs.items as any) = [
-  { title: "\u053A\u0561\u0574\u0561\u0576\u0561\u056F\u0561\u056F\u056B\u0581 \u054F\u0565\u056D\u0576\u0578\u056C\u0578\u0563\u056B\u0561\u0576\u0565\u0580", desc: "\u0555\u0563\u057F\u0561\u0563\u0578\u0580\u056E\u0578\u0582\u0574 \u0565\u0576\u0584 \u0561\u0580\u0564\u056B\u0561\u056F\u0561\u0576 \u0563\u0578\u0580\u056E\u056B\u0584\u0576\u0565\u0580 \u0587 \u056C\u0578\u0582\u056E\u0578\u0582\u0574\u0576\u0565\u0580" },
-  { title: "\u0531\u0576\u0570\u0561\u057F\u0561\u056F\u0561\u0576 \u0544\u0578\u057F\u0565\u0581\u0578\u0582\u0574", desc: "\u0540\u0561\u0580\u0574\u0561\u0580\u0565\u0581\u057E\u0561\u056E \u056C\u0578\u0582\u056E\u0578\u0582\u0574\u0576\u0565\u0580 \u0575\u0578\u0582\u0580\u0561\u0584\u0561\u0576\u0579\u0575\u0578\u0582\u0580 \u0570\u0561\u0573\u0561\u056D\u0578\u0580\u0564\u056B \u0570\u0561\u0574\u0561\u0580" },
-  { title: "\u0531\u0580\u0561\u0563 \u0587 \u0535\u0580\u0561\u0577\u056D\u056B\u0584\u0561\u057E\u0578\u0580\u057E\u0561\u056E", desc: "\u0531\u0580\u0561\u0563 \u0561\u0580\u0564\u0575\u0578\u0582\u0576\u0584 \u0565\u0580\u0561\u0577\u056D\u0561\u057E\u0578\u0580\u057E\u0561\u056E \u0561\u0580\u0564\u0575\u0578\u0582\u0576\u0584\u0578\u057E" },
-  { title: "\u0553\u0578\u0580\u0571\u0561\u057C\u0578\u0582 \u0539\u056B\u0574", desc: "\u0532\u0561\u0580\u0571\u0580\u0561\u056F\u0561\u0580\u0563 \u0578\u0580\u0561\u056F\u0561\u057E\u0578\u0580\u057E\u0561\u056E IT \u0574\u0561\u057D\u0576\u0561\u0563\u0565\u057F\u0576\u0565\u0580" },
-  { title: "\u053C\u0561\u0575\u0576 \u053E\u0561\u056E\u056F\u0578\u0582\u0574", desc: "\u0531\u0577\u056D\u0561\u057F\u0578\u0582\u0574 \u0565\u0576\u0584 \u0535\u0580\u0587\u0561\u0576\u0578\u0582\u0574 \u0587 \u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576\u056B \u0562\u0578\u056C\u0578\u0580 \u0574\u0561\u0580\u0566\u0565\u0580\u0578\u0582\u0574" },
-]
-translations.hy.technologies.title = "\u054F\u0565\u056D\u0576\u0578\u056C\u0578\u0563\u056B\u0561\u0576\u0565\u0580\u0568, \u0578\u0580\u0578\u0576\u0581 \u0570\u0565\u057F \u0531\u0577\u056D\u0561\u057F\u0578\u0582\u0574 \u0535\u0576\u0584"
-translations.hy.about.title = "FortisTeach-\u056B \u0544\u0561\u057D\u056B\u0576"
-translations.hy.about.text = "FortisTeach-\u0568 \u057A\u0580\u0578\u0586\u0565\u057D\u056B\u0578\u0576\u0561\u056C IT \u0565\u0576\u0569\u0561\u056F\u0561\u057C\u0578\u0582\u0581\u057E\u0561\u056E\u0584\u0561\u0575\u056B\u0576 \u0587 \u056D\u0565\u056C\u0561\u0581\u056B \u056C\u0578\u0582\u056E\u0578\u0582\u0574\u0576\u0565\u0580\u056B \u0574\u0561\u057F\u0561\u056F\u0561\u0580\u0561\u0580 \u0567 \u0535\u0580\u0587\u0561\u0576\u0578\u0582\u0574\u0589 \u0544\u0565\u0576\u0584 \u057F\u0580\u0561\u0574\u0561\u0564\u0580\u0578\u0582\u0574 \u0565\u0576\u0584 \u056F\u0578\u0580\u057A\u0578\u0580\u0561\u057F\u056B\u057E \u0574\u0561\u056F\u0561\u0580\u0564\u0561\u056F\u056B \u057F\u0565\u056D\u0576\u056B\u056F\u0561\u056F\u0561\u0576 \u056E\u0561\u057C\u0561\u0575\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580\u055D \u0576\u0565\u0580\u0561\u057C\u0575\u0561\u056C \u0581\u0561\u0576\u0581\u0565\u0580\u056B \u0576\u0561\u056D\u0561\u0563\u056E\u0578\u0582\u0574, \u057D\u0565\u0580\u057E\u0565\u0580\u0576\u0565\u0580\u056B \u056F\u0561\u057C\u0561\u057E\u0561\u0580\u0578\u0582\u0574, \u056D\u0565\u056C\u0561\u0581\u056B \u057F\u0561\u0576 \u056B\u0576\u057F\u0565\u0563\u0580\u0561\u0581\u056B\u0561 \u0587 \u056F\u0578\u0574\u057A\u056C\u0565\u0584\u057D IT \u0561\u057B\u0561\u056F\u0581\u0578\u0582\u0569\u0575\u0578\u0582\u0576 \u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576\u0578\u057E \u0574\u0565\u056F\u0589"
-translations.hy.contact.title = "\u053F\u0561\u057A\u0576\u057E\u0565\u056C \u0544\u0565\u0566"
-translations.hy.contact.phone = "\u0540\u0565\u057C\u0561\u056D\u0578\u057D"
-translations.hy.contact.email = "\u0537\u056C. \u0583\u0578\u057D\u057F"
-translations.hy.contact.area = "\u054D\u057A\u0561\u057D\u0561\u0580\u056F\u0574\u0561\u0576 \u054F\u0561\u0580\u0561\u056E\u0584"
-translations.hy.contact.areaValue = "\u0535\u0580\u0587\u0561\u0576 \u0587 \u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576\u056B \u0562\u0578\u056C\u0578\u0580 \u0574\u0561\u0580\u0566\u0565\u0580\u0568"
-translations.hy.contact.form.name = "\u0531\u0576\u0578\u0582\u0576"
-translations.hy.contact.form.email = "\u0537\u056C. \u0570\u0561\u057D\u0581\u0565"
-translations.hy.contact.form.message = "\u0540\u0561\u0572\u0578\u0580\u0564\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576"
-translations.hy.contact.form.send = "\u0548\u0582\u0572\u0561\u0580\u056F\u0565\u056C"
-translations.hy.footer.rights = "\u0532\u0578\u056C\u0578\u0580 \u056B\u0580\u0561\u057E\u0578\u0582\u0576\u0584\u0576\u0565\u0580\u0568 \u057A\u0561\u0577\u057F\u057A\u0561\u0576\u057E\u0561\u056E \u0565\u0576\u0589"
-translations.hy.footer.address = "\u0535\u0580\u0587\u0561\u0576, \u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576"
 
 export type Translations = typeof translations.en

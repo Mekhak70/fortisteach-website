@@ -19,7 +19,7 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="text-sm leading-relaxed">
-              Professional IT infrastructure and smart solutions provider.
+            {t.hero.title}
             </p>
           </div>
 

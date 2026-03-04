@@ -1,4 +1,8 @@
+import { useI18n } from "@/lib/i18n-context";
+import Link from "next/link";
 export default function ProjectDesignProcess() {
+    const { t, locale, setLocale } = useI18n()
+  
   return (
     <section id="design" className="relative py-24 px-6 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -6,12 +10,10 @@ export default function ProjectDesignProcess() {
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Նախագծման փուլերը
+            {t.designStages}
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            Մեր նախագծման գործընթացը կառուցված է հստակ և համակարգված
-            փուլերով՝ ապահովելու բարձր որակ, վերահսկելիություն և
-            կանխատեսելի արդյունք յուրաքանչյուր հաճախորդի համար։
+          {t.OurDesignProcess}
           </p>
         </div>
 
@@ -25,13 +27,10 @@ export default function ProjectDesignProcess() {
           <div className="relative mb-20 md:mb-28 flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-16 text-right hidden md:block">
               <h2 className="text-3xl font-semibold text-gray-900 mb-4">
-                🔎 Աուդիտ
+                🔎 {t.Audit}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Նախագծման առաջին փուլը աուդիտի իրականացումն է։
-                Ուսումնասիրվում է կազմակերպության ՏՏ ենթակառուցվածքը,
-                բացահայտվում են առկա խնդիրներն ու հնարավոր ռիսկերը,
-                որից հետո առաջարկվում են համապատասխան լուծումների տարբերակներ։
+              {t.processAudit}
               </p>
             </div>
 
@@ -40,10 +39,9 @@ export default function ProjectDesignProcess() {
             </div>
 
             <div className="md:w-1/2 md:pl-16 md:hidden mt-10 text-center">
-              <h2 className="text-2xl font-semibold mb-4">🔎 Աուդիտ</h2>
+              <h2 className="text-2xl font-semibold mb-4">🔎 {t.Audit}</h2>
               <p className="text-gray-600">
-                Նախագծման առաջին փուլը աուդիտի իրականացումն է։
-                Ուսումնասիրվում է ՏՏ ենթակառուցվածքը և առաջարկվում են լուծումներ։
+                {t.firststagedesignprocess}
               </p>
             </div>
           </div>
@@ -58,18 +56,12 @@ export default function ProjectDesignProcess() {
 
             <div className="md:w-1/2 md:pl-16 text-left mt-10 md:mt-0">
               <h2 className="text-3xl font-semibold text-gray-900 mb-4">
-                💼 Գնային առաջարկ
+                💼 {t.CommercialProposal}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Աուդիտի արդյունքների հիման վրա ձևավորվում է անհատական
-                գնային առաջարկ։ Այն կախված է խնդիրների ծավալից,
-                օգտագործվող տեխնիկայի և սերվերների քանակից, ինչպես նաև
-                սպասարկման անհրաժեշտությունից։
+              {t.auditResults}
                 <br /><br />
-                Գնային առաջարկը կարող է ներառել ինչպես միանվագ
-                աշխատանքներ, այնպես էլ ամսական սպասարկման ծառայություն։
-                Պատրաստ լինելուց հետո այն ուղարկվում է հաճախորդին
-                հաստատման համար։
+                {t.commercialProposalMayInclude}
               </p>
             </div>
           </div>
@@ -78,14 +70,10 @@ export default function ProjectDesignProcess() {
           <div className="relative flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pr-16 text-right hidden md:block">
               <h2 className="text-3xl font-semibold text-gray-900 mb-4">
-                ⚙️ Իրականացում
+                ⚙️ {t.Implementation}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Գնային առաջարկը հաստատելուց հետո իրականացվում են
-                առաջարկում ներառված բոլոր աշխատանքները՝ համաձայնեցված
-                ժամկետների և տեխնիկական պահանջների համապատասխան։
-                Անհրաժեշտության դեպքում ապահովվում է նաև հետագա
-                տեխնիկական աջակցություն և սպասարկում։
+              {t.commercialProposalApproved}
               </p>
             </div>
 
@@ -94,10 +82,9 @@ export default function ProjectDesignProcess() {
             </div>
 
             <div className="md:w-1/2 md:pl-16 md:hidden mt-10 text-center">
-              <h2 className="text-2xl font-semibold mb-4">⚙️ Իրականացում</h2>
+              <h2 className="text-2xl font-semibold mb-4">⚙️ {t.Implementation}</h2>
               <p className="text-gray-600">
-                Հաստատումից հետո իրականացվում են բոլոր աշխատանքները՝
-                համաձայնեցված տեխնիկական պահանջներով։
+            {t.afterApproval}
               </p>
             </div>
           </div>
@@ -106,9 +93,15 @@ export default function ProjectDesignProcess() {
 
         {/* CTA */}
         <div className="text-center mt-24">
+
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg transition" style={{ cursor: 'pointer' }}
           >
-            Պատվիրել աուդիտ
+             <a
+                href={'#contact'}
+                className="text-sm font-medium"
+              >
+{t.orderAudit}
+</a>
           </button>
         </div>
 
