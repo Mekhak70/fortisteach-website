@@ -6,9 +6,8 @@ import './globals.css'
 const _inter = Inter({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: 'FortisTeach - Professional IT & Smart Technology Solutions',
-  description: 'Reliable technical, network, server and smart home services in Yerevan and regions of Armenia. Professional IT infrastructure and smart solutions provider.',
-  generator: 'v0.app',
+  title: 'FortisTeach - IT, Network & Smart Technology Services in Armenia',
+  description: 'FortisTeach-ը առաջարկում է պրոֆեսիոնալ IT ծառայություններ Հայաստանում՝ ներառյալ ցանցերի կարգավորում, սերվերների տեղադրում, VPN լուծումներ, տեսահսկման համակարգեր և Smart Home տեխնոլոգիաներ: IT services Armenia, IT support Yerevan, IT infrastructure services, IT consulting Armenia, network setup Armenia, VPN setup Armenia, MikroTik configuration, Cisco network configuration, server setup Armenia, NAS storage setup, Active Directory setup, virtualization server setup, Linux server configuration, CCTV installation Yerevan, IP camera installation Armenia, Smart Home installation Armenia, home automation system Armenia, cloud infrastructure setup.',
   icons: {
     icon: [
       {
@@ -41,6 +40,10 @@ export default function RootLayout({
   return (
     <html lang="hy">
       <body className="font-sans antialiased">
+        {/* Գլխավոր SEO նախադասություն */}
+        <div style={{ display: 'none' }}>
+          FortisTeach-ը առաջարկում է պրոֆեսիոնալ IT ծառայություններ Հայաստանում՝ ներառյալ ցանցերի կարգավորում, սերվերների տեղադրում, VPN լուծումներ, տեսահսկման համակարգեր և Smart Home տեխնոլոգիաներ: IT services Armenia, IT support Yerevan, IT infrastructure services, IT consulting Armenia, network setup Armenia, VPN setup Armenia, MikroTik configuration, Cisco network configuration, server setup Armenia, NAS storage setup, Active Directory setup, virtualization server setup, Linux server configuration, CCTV installation Yerevan, IP camera installation Armenia, Smart Home installation Armenia, home automation system Armenia, cloud infrastructure setup.
+        </div>
         {children}
         <Analytics />
       </body>
