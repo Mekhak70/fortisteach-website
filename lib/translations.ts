@@ -44,7 +44,7 @@ export const translations = {
       title: "Մեր ծառայությունները",
       subtitle: "Կոմպլեքս IT լուծումներ բիզնեսի և տան համար",
       items: [
-        { title: "Տեխնիկական սպասարկում", desc: "Էլեկտրական և համակարգչային սպասարկում" },
+        { title: "AI ավտոմատացման լուծումներ", desc: "Արհեստական բանականության հիմքով համակարգերի ներդրում բիզնեսի ավտոմատացման համար․" },
         { title: "Ցանցային ծառայություններ", desc: "LAN, WAN, VPN, L2TP, OpenVPN, WireGuard կարգավորում" },
         { title: "Սերվերների կառավարում", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
         { title: "Գրասենյակային ցանցերի նախագծում", desc: "Գրասենյակային ցանցերի նախագծում և սպասարկում" },
@@ -134,7 +134,7 @@ export const translations = {
       title: "Our Services",
       subtitle: "Comprehensive IT solutions for businesses and homes",
       items: [
-        { title: "Technical Maintenance", desc: "Electrical and computer support services" },
+        { title: "AI Automation Solutions", desc: "Implementation of AI-Based Systems for Business Automation" },
         { title: "Network Services", desc: "LAN, WAN, VPN, L2TP, OpenVPN, WireGuard setup" },
         { title: "Server Administration", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
         { title: "Office Network Design", desc: "Office network design and maintenance solutions" },
@@ -225,7 +225,7 @@ export const translations = {
       title: "Наши услуги",
       subtitle: "Комплексные IT-решения для бизнеса и дома",
       items: [
-        { title: "Техническое обслуживание", desc: "Электротехническая и компьютерная поддержка" },
+        { title: "Решения по автоматизации с ИИ", desc: "Внедрение систем на базе ИИ для автоматизации бизнеса" },
         { title: "Сетевые услуги", desc: "Настройка LAN, WAN, VPN, L2TP, OpenVPN, WireGuard" },
         { title: "Администрирование серверов", desc: "OS, Hypervisor, RAID, NAS, Web server, VPS/VDS, Active Directory" },
         { title: "Проектирование сетей", desc: "Проектирование и обслуживание офисных сетей" },

@@ -32,6 +32,7 @@ export const viewport: Viewport = {
   userScalable: true,
 }
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -40,7 +41,6 @@ export default function RootLayout({
   return (
     <html lang="hy">
       <body className="font-sans antialiased">
-        {/* Գլխավոր SEO նախադասություն */}
         <div style={{ display: 'none' }}>
           FortisTeach-ը առաջարկում է պրոֆեսիոնալ IT ծառայություններ Հայաստանում՝ ներառյալ ցանցերի կարգավորում, սերվերների տեղադրում, VPN լուծումներ, տեսահսկման համակարգեր և Smart Home տեխնոլոգիաներ: IT services Armenia, IT support Yerevan, IT infrastructure services, IT consulting Armenia, network setup Armenia, VPN setup Armenia, MikroTik configuration, Cisco network configuration, server setup Armenia, NAS storage setup, Active Directory setup, virtualization server setup, Linux server configuration, CCTV installation Yerevan, IP camera installation Armenia, Smart Home installation Armenia, home automation system Armenia, cloud infrastructure setup.
         </div>
