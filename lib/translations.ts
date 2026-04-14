@@ -34,7 +34,7 @@ export const translations = {
       contact: "Կապ",
     },
     hero: {
-      title: "Պրոֆեսիոնալ IT և Smart Տեխնոլոգիական Լուծումներ",
+      title: "IT և AI տեխնոլոգիական լուծումներ",
       subtitle:
         "Հուսալի տեխնիկական, ցանցային, սերվերային և խելացի տան ծառայություններ Երևանում և մարզերում",
       cta1: "Ստանալ խորհրդատվություն",
@@ -124,7 +124,7 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      title: "Professional IT & Smart Technology Solutions",
+      title: "IT and AI technological solutions",
       subtitle:
         "Reliable technical, network, server and smart home services in Yerevan and across Armenia",
       cta1: "Get Consultation",
@@ -215,7 +215,7 @@ export const translations = {
       contact: "Контакты",
     },
     hero: {
-      title: "Профессиональные IT и Smart Технологические Решения",
+      title: "IT и AI технологические решения",
       subtitle:
         "Надёжные технические, сетевые, серверные и услуги умного дома в Ереване и по всей Армении",
       cta1: "Получить консультацию",
