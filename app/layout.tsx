@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'FortisTeach',
     images: [
       {
-        url: 'https://www.fortisteach.com/icon.svg', 
+        url: 'https://www.fortisteach.com/logo.png', 
         width: 1200,
         height: 630,
         alt: 'FortisTeach Logo',
