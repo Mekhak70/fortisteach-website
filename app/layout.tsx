@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'FortisTeach',
     images: [
       {
-        url: 'https://www.fortisteach.com/logo.png', 
+        url: 'https://www.fortisteach.com/apple-icon.png', 
         width: 1200,
         height: 630,
         alt: 'FortisTeach Logo',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'FortisTeach - IT, Network & Smart Technology Services in Armenia',
     description: 'FortisTeach-ը առաջարկում է պրոֆեսիոնալ IT ծառայություններ Հայաստանում՝ ներառյալ ցանցերի կարգավորում, սերվերների տեղադրում, VPN լուծումներ, տեսահսկման համակարգեր և Smart Home տեխնոլոգիաներ.',
-    images: ['https://www.fortisteach.com/logo.png'],
+    images: ['https://www.fortisteach.com/apple-icon.png'],
   },
 
   icons: {
