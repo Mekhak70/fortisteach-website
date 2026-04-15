@@ -1,0 +1,16 @@
+{
+    "name": "FortisTeach",
+    "short_name": "FortisTeach",
+    "description": "Professional IT Services in Armenia",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1a3a6b",
+    "theme_color": "#1a3a6b",
+    "icons": [
+      {
+        "src": "/apple-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }
+    ]
+  }
