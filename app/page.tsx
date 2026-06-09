@@ -10,6 +10,7 @@ import { AboutSection } from "@/components/about-section"
 import { ContactSection } from "@/components/contact-section"
 import { SiteFooter } from "@/components/site-footer"
 import ProjectDesignProcess from "@/components/ui/ProjectDesignProcess"
+import { ScrollAnimation } from "@/components/ui/ScrollAnimation"
 
 export default function Home() {
   return (
@@ -17,12 +18,26 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <ServicesSection />
-        <WhyUsSection />
-        <TechnologiesSection />
-        <AboutSection />
-        <ContactSection />
-        <ProjectDesignProcess />
+        
+        <ScrollAnimation direction="up" delay={0.1}>
+          <ServicesSection />
+        </ScrollAnimation>
+        
+        <ScrollAnimation direction="left" delay={0.2}>
+          <WhyUsSection />
+        </ScrollAnimation>
+        
+        <ScrollAnimation direction="right" delay={0.1}>
+          <AboutSection />
+        </ScrollAnimation>
+        
+        <ScrollAnimation direction="scale" delay={0.2}>
+          <ContactSection />
+        </ScrollAnimation>
+        
+        <ScrollAnimation direction="up" delay={0.15}>
+          <ProjectDesignProcess />
+        </ScrollAnimation>
       </main>
       <SiteFooter />
     </I18nProvider>
