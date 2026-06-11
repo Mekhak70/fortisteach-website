@@ -1,18 +1,17 @@
 // components/ui/ScrollAnimation.tsx
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { motion, useInView, Variants } from "framer-motion"
+import { useRef } from "react"
 
 interface ScrollAnimationProps {
   children: React.ReactNode
   delay?: number
-  direction?: "up" | "down" | "left" | "right" | "scale" | "fade" | "scale-up" | "scale-down"
+  direction?: "up" | "down" | "left" | "right" | "scale" | "fade" | "rotate"
   duration?: number
-  threshold?: number
   once?: boolean
   className?: string
   distance?: number
-  rootMargin?: string
 }
 
 export function ScrollAnimation({ 
@@ -20,94 +19,66 @@ export function ScrollAnimation({
   delay = 0, 
   direction = "up",
   duration = 0.6,
-  threshold = 0.1,
   once = true,
   className = "",
-  distance = 50,
-  rootMargin = "0px 0px -50px 0px"
+  distance = 50
 }: ScrollAnimationProps) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [isVisible, setIsVisible] = useState(false)
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once, margin: "-100px 0px -100px 0px" })
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          if (once) {
-            observer.disconnect()
-          }
-        } else if (!once) {
-          setIsVisible(false)
-        }
-      },
-      { threshold, rootMargin }
-    )
-
-    const currentRef = ref.current
-    if (currentRef) {
-      observer.observe(currentRef)
+  const getVariants = (): Variants => {
+    const variants: Variants = {
+      hidden: { opacity: 0 },
+      visible: { opacity: 1 }
     }
 
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef)
-      }
-    }
-  }, [threshold, once, rootMargin])
-
-  const getInitialStyles = (): React.CSSProperties => {
-    const baseStyle: React.CSSProperties = { 
-      opacity: 0,
-      willChange: "transform, opacity"
-    }
-    
     switch (direction) {
       case "up":
-        return { ...baseStyle, transform: `translateY(${distance}px)` }
+        variants.hidden = { ...variants.hidden, y: distance }
+        variants.visible = { ...variants.visible, y: 0 }
+        break
       case "down":
-        return { ...baseStyle, transform: `translateY(-${distance}px)` }
+        variants.hidden = { ...variants.hidden, y: -distance }
+        variants.visible = { ...variants.visible, y: 0 }
+        break
       case "left":
-        return { ...baseStyle, transform: `translateX(${distance}px)` }
+        variants.hidden = { ...variants.hidden, x: distance }
+        variants.visible = { ...variants.visible, x: 0 }
+        break
       case "right":
-        return { ...baseStyle, transform: `translateX(-${distance}px)` }
+        variants.hidden = { ...variants.hidden, x: -distance }
+        variants.visible = { ...variants.visible, x: 0 }
+        break
       case "scale":
-        return { ...baseStyle, transform: "scale(0.8)" }
-      case "scale-up":
-        return { ...baseStyle, transform: "scale(0.95)" }
-      case "scale-down":
-        return { ...baseStyle, transform: "scale(1.05)" }
+        variants.hidden = { ...variants.hidden, scale: 0.8 }
+        variants.visible = { ...variants.visible, scale: 1 }
+        break
+      case "rotate":
+        variants.hidden = { ...variants.hidden, rotate: -10, scale: 0.9 }
+        variants.visible = { ...variants.visible, rotate: 0, scale: 1 }
+        break
       case "fade":
-        return { ...baseStyle }
       default:
-        return { ...baseStyle, transform: `translateY(${distance}px)` }
+        break
     }
-  }
 
-  const getAnimatedStyles = (): React.CSSProperties => {
-    const baseStyle: React.CSSProperties = { opacity: 1 }
-    
-    switch (direction) {
-      case "scale":
-      case "scale-up":
-      case "scale-down":
-        return { ...baseStyle, transform: "scale(1)" }
-      default:
-        return { ...baseStyle, transform: "translate(0, 0)" }
-    }
+    return variants
   }
 
   return (
-    <div
+    <motion.div
       ref={ref}
-      className={`${className}`}
-      style={{
-        transition: `all ${duration}s cubic-bezier(0.4, 0, 0.2, 1)`,
-        transitionDelay: `${delay}s`,
-        ...(isVisible ? getAnimatedStyles() : getInitialStyles())
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={getVariants()}
+      transition={{
+        duration,
+        delay,
+        ease: [0.4, 0, 0.2, 1]
       }}
+      className={className}
     >
       {children}
-    </div>
+    </motion.div>
   )
 }
