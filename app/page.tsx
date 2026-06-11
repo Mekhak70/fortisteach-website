@@ -14,8 +14,7 @@ import { ScrollAnimation } from "@/components/ui/ScrollAnimation"
 
 export default function Home() {
   return (
-    <I18nProvider>
-      <Header />
+ <>
       <main>
         <HeroSection />
         
@@ -40,6 +39,6 @@ export default function Home() {
         </ScrollAnimation>
       </main>
       <SiteFooter />
-    </I18nProvider>
+      </>
   )
 }

@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { Header } from '@/components/header'
+import { I18nProvider } from '@/lib/i18n-context'
 
 const _inter = Inter({ subsets: ["latin", "cyrillic"] })
 
@@ -192,8 +194,11 @@ export default function RootLayout({
           <h2>Contact FortisTeach</h2>
           <p>Professional IT consulting, support and technology services in Yerevan, Armenia.</p>
         </div>
-        
+        <I18nProvider>
+
+        <Header/>
         {children}
+        </I18nProvider>
         
         {/* Structured Data / JSON-LD for better SEO */}
         <script

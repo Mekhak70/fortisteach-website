@@ -283,12 +283,18 @@ export function HeroSection() {
                 <Shield className="h-3.5 w-3.5 text-[oklch(0.65_0.18_220)]" />
                 <span className="text-xs font-medium text-[oklch(0.75_0.10_220)]">FortisTeach</span>
               </div>
+              <div className="inline-flex items-center gap-4 rounded-full border border-[oklch(0.55_0.18_220)]/30 bg-[oklch(0.55_0.18_220)]/10 px-16 py-4 w-fit animate-in fade-in slide-in-from-top-5 duration-500 backdrop-blur-sm">
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance text-white animate-in fade-in slide-in-from-bottom-5 duration-700">
                 {t.hero.title}
               </h1>
+              </div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-[oklch(0.55_0.18_220)]/30 bg-[oklch(0.55_0.18_220)]/10 px-4 py-1.5 w-fit animate-in fade-in slide-in-from-top-5 duration-500 backdrop-blur-sm">
+
               <p className="text-lg leading-relaxed text-[oklch(0.70_0.02_260)] max-w-xl text-pretty animate-in fade-in slide-in-from-bottom-5 duration-700 delay-100">
                 {t.hero.subtitle}
               </p>
+              </div>
               <div className="flex flex-wrap gap-4 pt-2 animate-in fade-in slide-in-from-bottom-5 duration-700 delay-200">
                 <a
                   href="#contact"
