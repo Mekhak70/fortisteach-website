@@ -21,7 +21,9 @@ export default function Home() {
         <ScrollAnimation direction="up" delay={0.1}>
           <ServicesSection />
         </ScrollAnimation>
-        
+        <ScrollAnimation direction="up" delay={0.15}>
+          <ProjectDesignProcess />
+        </ScrollAnimation>
         <ScrollAnimation direction="left" delay={0.2}>
           <WhyUsSection />
         </ScrollAnimation>
@@ -34,9 +36,7 @@ export default function Home() {
           <ContactSection />
         </ScrollAnimation>
         
-        <ScrollAnimation direction="up" delay={0.15}>
-          <ProjectDesignProcess />
-        </ScrollAnimation>
+        
       </main>
       <SiteFooter />
       </>

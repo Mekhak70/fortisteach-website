@@ -71,13 +71,22 @@ export default function ServicePage() {
           Բոլոր ծառայությունները
         </Link>
 
-        {/* Description */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/10">
-          <h2 className="text-2xl font-bold text-white mb-4">Նկարագրություն</h2>
-          <p className="text-gray-300 leading-relaxed text-lg whitespace-pre-line">
-            {service.longDescription}
-          </p>
-        </div>
+        {/* Description - if fullText exists, show it as complete description */}
+        {service.fullText ? (
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/10">
+            <h2 className="text-2xl font-bold text-white mb-4">Նկարագրություն</h2>
+            <div className="text-gray-300 leading-relaxed prose prose-invert max-w-none whitespace-pre-line">
+              {service.fullText}
+            </div>
+          </div>
+        ) : (
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/10">
+            <h2 className="text-2xl font-bold text-white mb-4">Նկարագրություն</h2>
+            <p className="text-gray-300 leading-relaxed text-lg whitespace-pre-line">
+              {service.longDescription}
+            </p>
+          </div>
+        )}
 
         {/* Target Audience Section */}
         {service.targetAudience && service.targetAudience.length > 0 && (
@@ -100,9 +109,6 @@ export default function ServicePage() {
             </div>
           </div>
         )}
-
-        {/* Why Choose Us Section */}
-        
 
         {/* Stats Section */}
         {service.stats && service.stats.length > 0 && (
@@ -197,7 +203,8 @@ export default function ServicePage() {
           </div>
         )}
 
-{service.whyChooseUs && service.whyChooseUs.length > 0 && (
+        {/* Why Choose Us Section */}
+        {service.whyChooseUs && service.whyChooseUs.length > 0 && (
           <div className="bg-gradient-to-r from-amber-500/5 to-orange-500/5 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-amber-500/20">
             <div className="flex items-center gap-3 mb-6">
               <div className="h-10 w-10 rounded-xl bg-amber-500/20 flex items-center justify-center">
@@ -207,7 +214,6 @@ export default function ServicePage() {
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {service.whyChooseUs.map((reason, idx) => {
-                // Split the reason into title and description if it contains ' - '
                 const parts = reason.split(' - ');
                 const title = parts[0];
                 const description = parts.slice(1).join(' - ');
